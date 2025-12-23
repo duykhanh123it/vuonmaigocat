@@ -45,23 +45,25 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Intro Info */}
-      <section className="py-20 bg-slate-50">
+      <section className="bg-slate-50 pb-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto bg-amber-50 rounded-2xl shadow-xl overflow-hidden md:flex">
-             <div className="p-8 md:p-12 text-center flex-1">
-                <h2 className="text-3xl font-bold font-serif text-amber-900 mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
-                <p className="text-slate-600 leading-relaxed text-lg">
-                  Vườn Mai Gò Cát tự hào là địa chỉ uy tín hàng đầu trong việc cung cấp mai Tết cao cấp tại miền Nam. 
-                  Với kinh nghiệm trên 25 năm, chúng tôi mang đến những cây mai đẹp nhất, được chăm sóc tỉ mỉ từ nghệ nhân giàu tâm huyết, 
-                  đảm bảo mỗi khách hàng đều có một mùa Tết thật trọn vẹn và ý nghĩa.
-                </p>
-             </div>
+          <div className="relative z-10 -mt-10 md:-mt-14 lg:-mt-20">
+            <div className="max-w-4xl mx-auto bg-amber-50 rounded-2xl shadow-xl overflow-hidden md:flex">
+               <div className="p-8 md:p-12 text-center flex-1">
+                  <h2 className="text-3xl font-bold font-serif text-amber-900 mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
+                  <p className="text-slate-600 leading-relaxed text-lg">
+                    Vườn Mai Gò Cát tự hào là địa chỉ uy tín hàng đầu trong việc cung cấp mai Tết cao cấp tại miền Nam. 
+                    Với kinh nghiệm trên 25 năm, chúng tôi mang đến những cây mai đẹp nhất, được chăm sóc tỉ mỉ từ nghệ nhân giàu tâm huyết, 
+                    đảm bảo mỗi khách hàng đều có một mùa Tết thật trọn vẹn và ý nghĩa.
+                  </p>
+               </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Gallery Section */}
-      <section className="py-20 container mx-auto px-4">
+      <section className="container mx-auto px-4 pt-28 md:pt-32 lg:pt-36 pb-20">
         <h2 className="text-3xl font-bold font-serif text-center mb-12">Khám phá Vườn Mai Gò Cát</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
            {images.map((img, i) => (
