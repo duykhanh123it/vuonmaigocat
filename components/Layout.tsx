@@ -10,7 +10,7 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
-  const CALL_PHONE = '0901234567';
+  const CALL_PHONE = '0922 727 277';
   const navItems = [
     { id: 'home', label: 'Trang Chủ' },
     { id: 'products', label: 'Sản Phẩm' },
