@@ -10,6 +10,19 @@ interface NavbarProps {
 }
 
 export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) => {
+  const PHONE_NUMBER = '0901234567';
+  const ZALO_LINK = `https://zalo.me/${PHONE_NUMBER}`;
+
+  const handleCallClick = () => {
+    const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+    const isMobile = /android|iphone|ipad|ipod|iemobile|blackberry|bada|tizen|mobile/i.test(userAgent);
+
+    if (isMobile) {
+      window.location.href = `tel:${PHONE_NUMBER}`;
+    } else {
+      window.open(ZALO_LINK, '_blank', 'noopener,noreferrer');
+    }
+  };
   const CALL_PHONE = '0922 727 277';
   const navItems = [
     { id: 'home', label: 'Trang Chủ' },
@@ -46,6 +59,9 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
         </div>
 
         <div className="flex items-center gap-4">
+          <button
+            onClick={handleCallClick}
+            aria-label={`Gọi ngay ${PHONE_NUMBER}`}
           <a
             href={`tel:${CALL_PHONE}`}
             aria-label={`Gọi ngay ${CALL_PHONE}`}
