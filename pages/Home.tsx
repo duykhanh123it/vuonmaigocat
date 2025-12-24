@@ -51,7 +51,9 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
             <div className="max-w-4xl mx-auto bg-primary/10 rounded-2xl shadow-xl overflow-hidden md:flex">
                <div className="p-8 md:p-12 text-center flex-1">
                   <h2 className="text-3xl font-bold font-serif text-secondary mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
-                  <p className="text-slate-600 leading-relaxed text-lg">
+            <div className="max-w-4xl mx-auto bg-amber-50 rounded-2xl shadow-xl overflow-hidden md:flex">
+               <div className="p-8 md:p-12 text-center flex-1">
+                  <h2 className="text-3xl font-bold font-serif text-amber-900 mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
                     Vườn Mai Gò Cát tự hào là địa chỉ uy tín hàng đầu trong việc cung cấp mai Tết cao cấp tại miền Nam. 
                     Với kinh nghiệm trên 25 năm, chúng tôi mang đến những cây mai đẹp nhất, được chăm sóc tỉ mỉ từ nghệ nhân giàu tâm huyết, 
                     đảm bảo mỗi khách hàng đều có một mùa Tết thật trọn vẹn và ý nghĩa.
