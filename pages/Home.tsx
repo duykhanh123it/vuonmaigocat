@@ -37,7 +37,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
           </p>
           <button 
             onClick={() => setCurrentPage('products')}
-            className="bg-amber-400 hover:bg-amber-500 text-amber-950 px-8 py-3 rounded-full font-bold text-lg transition-all shadow-lg active:scale-95"
+            className="bg-primary hover:bg-primary text-secondary px-8 py-3 rounded-full font-bold text-lg transition-all shadow-lg active:scale-95"
           >
             Khám Phá Bộ Sưu Tập
           </button>
@@ -48,10 +48,12 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       <section className="bg-slate-50 pb-20">
         <div className="container mx-auto px-4">
           <div className="relative z-10 -mt-10 md:-mt-14 lg:-mt-20">
+            <div className="max-w-4xl mx-auto bg-primary/10 rounded-2xl shadow-xl overflow-hidden md:flex">
+               <div className="p-8 md:p-12 text-center flex-1">
+                  <h2 className="text-3xl font-bold font-serif text-secondary mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
             <div className="max-w-4xl mx-auto bg-amber-50 rounded-2xl shadow-xl overflow-hidden md:flex">
                <div className="p-8 md:p-12 text-center flex-1">
                   <h2 className="text-3xl font-bold font-serif text-amber-900 mb-6 uppercase tracking-wider">Hơn 25 Năm Khẳng Định Chất Lượng</h2>
-                  <p className="text-slate-600 leading-relaxed text-lg">
                     Vườn Mai Gò Cát tự hào là địa chỉ uy tín hàng đầu trong việc cung cấp mai Tết cao cấp tại miền Nam. 
                     Với kinh nghiệm trên 25 năm, chúng tôi mang đến những cây mai đẹp nhất, được chăm sóc tỉ mỉ từ nghệ nhân giàu tâm huyết, 
                     đảm bảo mỗi khách hàng đều có một mùa Tết thật trọn vẹn và ý nghĩa.
@@ -75,7 +77,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       </section>
 
       {/* Booking CTA Banner */}
-      <section className="py-20 bg-gradient-to-r from-amber-400 via-orange-500 to-red-600 text-white">
+      <section className="py-20 bg-gradient-to-r from-primary via-primary to-secondary text-white">
         <div className="container mx-auto px-4 text-center">
            <h2 className="text-4xl font-bold font-serif mb-6">Đặt Lịch Tham Quan Vườn</h2>
            <p className="text-xl mb-10 opacity-90 max-w-2xl mx-auto">
@@ -83,7 +85,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
            </p>
            <button 
              onClick={() => setCurrentPage('booking')}
-             className="bg-white text-orange-600 hover:bg-slate-100 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl active:scale-95"
+             className="bg-white text-secondary hover:bg-slate-100 px-10 py-4 rounded-full font-bold text-lg transition-all shadow-xl active:scale-95"
            >
              Đặt Lịch Hẹn Ngay
            </button>
@@ -94,17 +96,17 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
       <section className="py-20 container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold font-serif mb-8 border-l-4 border-amber-500 pl-4">Thông Tin Liên Hệ</h3>
+            <h3 className="text-2xl font-bold font-serif mb-8 border-l-4 border-primary pl-4">Thông Tin Liên Hệ</h3>
             <div className="space-y-6">
                <div className="flex gap-4 p-4 bg-white rounded-xl shadow-sm">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">📍</div>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">📍</div>
                   <div>
                     <p className="font-bold">Địa Chỉ Vườn</p>
                     <p className="text-slate-500 text-sm">56 Đường 882, P. Long Trường, Thành phố Hồ Chí Minh</p>
                   </div>
                </div>
                <div className="flex gap-4 p-4 bg-white rounded-xl shadow-sm">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">📞</div>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">📞</div>
                   <div>
                     <p className="font-bold">Hotline</p>
                     <p className="text-slate-500 text-sm">0922 727 277: Lê Minh Quý</p>
@@ -112,7 +114,7 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
                   </div>
                </div>
                <div className="flex gap-4 p-4 bg-white rounded-xl shadow-sm">
-                  <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center text-amber-600">⏰</div>
+                  <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary">⏰</div>
                   <div>
                     <p className="font-bold">Giờ Làm Việc</p>
                     <p className="text-slate-500 text-sm">Thứ 2 - Chủ Nhật: 7:00 - 18:00</p>
@@ -123,9 +125,9 @@ const Home: React.FC<HomeProps> = ({ setCurrentPage }) => {
           <div className="rounded-2xl overflow-hidden shadow-2xl h-80 relative group">
             <img src="https://picsum.photos/id/10/800/400" className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-700" alt="map" />
             <div className="absolute inset-0 flex flex-col items-center justify-center text-white bg-black/20">
-               <div className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center mb-4">📍</div>
+               <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-4">📍</div>
                <p className="font-bold text-xl mb-4">Vườn Mai Gò Cát</p>
-               <button className="bg-amber-400 text-amber-950 px-6 py-2 rounded-lg font-bold text-sm">Mở Google Maps</button>
+               <button className="bg-primary text-secondary px-6 py-2 rounded-lg font-bold text-sm">Mở Google Maps</button>
             </div>
           </div>
         </div>
