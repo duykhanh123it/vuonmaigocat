@@ -54,10 +54,10 @@ const App: React.FC = () => {
 
       {/* Persistent Floating Call-to-Action */}
       <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50 md:hidden">
-         <button className="w-14 h-14 bg-green-500 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl animate-bounce">
+         <button className="w-14 h-14 bg-secondary text-white rounded-full shadow-2xl flex items-center justify-center text-2xl animate-bounce">
             💬
          </button>
-         <button className="w-14 h-14 bg-red-600 text-white rounded-full shadow-2xl flex items-center justify-center text-2xl">
+         <button className="w-14 h-14 bg-secondary text-white rounded-full shadow-2xl flex items-center justify-center text-2xl">
             📞
          </button>
       </div>

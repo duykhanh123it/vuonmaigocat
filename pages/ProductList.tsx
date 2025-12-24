@@ -21,7 +21,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Banner */}
-      <section className="bg-gradient-to-b from-amber-400 to-orange-600 text-white py-16">
+      <section className="bg-gradient-to-b from-primary to-secondary text-white py-16">
         <div className="container mx-auto px-4 text-center">
            <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Sản Phẩm Mai Tết</h1>
            <p className="text-lg opacity-90">Khám phá bộ sưu tập mai đa dạng, chất lượng cao</p>
@@ -33,7 +33,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
         <aside className="space-y-8">
            <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="font-bold text-lg mb-6 flex items-center gap-2">
-                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                  </svg>
                  Bộ Lọc
@@ -47,7 +47,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
                         <button 
                           key={type}
                           onClick={() => setFilterType(type)}
-                          className={`text-left px-4 py-2 rounded-lg text-sm transition-all ${filterType === type ? 'bg-amber-400 text-amber-950 font-bold' : 'hover:bg-amber-50 text-slate-600'}`}
+                          className={`text-left px-4 py-2 rounded-lg text-sm transition-all ${filterType === type ? 'bg-primary text-secondary font-bold' : 'hover:bg-primary/10 text-slate-600'}`}
                         >
                           {type === 'All' ? 'Tất Cả' : type}
                         </button>
@@ -58,22 +58,22 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
                 <div>
                    <label className="text-sm text-slate-500 block mb-3">Mức Giá</label>
                    <div className="flex flex-col gap-2">
-                      <button className="text-left px-4 py-2 rounded-lg text-sm bg-amber-400 text-amber-950 font-bold">Tất Cả Mức Giá</button>
-                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-amber-50 text-slate-600">Dưới 5 triệu</button>
-                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-amber-50 text-slate-600">5 - 10 triệu</button>
-                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-amber-50 text-slate-600">10 - 20 triệu</button>
-                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-amber-50 text-slate-600">Trên 20 triệu</button>
+                      <button className="text-left px-4 py-2 rounded-lg text-sm bg-primary text-secondary font-bold">Tất Cả Mức Giá</button>
+                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-primary/10 text-slate-600">Dưới 5 triệu</button>
+                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-primary/10 text-slate-600">5 - 10 triệu</button>
+                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-primary/10 text-slate-600">10 - 20 triệu</button>
+                      <button className="text-left px-4 py-2 rounded-lg text-sm hover:bg-primary/10 text-slate-600">Trên 20 triệu</button>
                    </div>
                 </div>
 
                 <div>
                    <label className="text-sm text-slate-500 block mb-3">Chiều cao</label>
-                   <button className="w-full text-left px-4 py-2 rounded-lg text-sm bg-amber-400 text-amber-950 font-bold mb-2">Tất Cả Chiều cao</button>
+                   <button className="w-full text-left px-4 py-2 rounded-lg text-sm bg-primary text-secondary font-bold mb-2">Tất Cả Chiều cao</button>
                    <div className="grid grid-cols-2 gap-2 text-xs">
-                      <button className="p-2 border rounded hover:border-amber-400">Dưới 1m</button>
-                      <button className="p-2 border rounded hover:border-amber-400">1m - 2m</button>
-                      <button className="p-2 border rounded hover:border-amber-400">2m - 3m</button>
-                      <button className="p-2 border rounded hover:border-amber-400">3m - 4m</button>
+                      <button className="p-2 border rounded hover:border-primary">Dưới 1m</button>
+                      <button className="p-2 border rounded hover:border-primary">1m - 2m</button>
+                      <button className="p-2 border rounded hover:border-primary">2m - 3m</button>
+                      <button className="p-2 border rounded hover:border-primary">3m - 4m</button>
                    </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
                 <input 
                   type="text" 
                   placeholder="Tìm kiếm mã/tên sản phẩm..." 
-                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-amber-200 focus:outline-none focus:ring-2 focus:ring-amber-400 transition-all shadow-sm"
+                  className="w-full pl-12 pr-4 py-3 rounded-xl border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary transition-all shadow-sm"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -103,7 +103,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
                 <div key={p.id} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all group flex flex-col h-full">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                    <div className="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase text-amber-700 shadow-sm">
+                    <div className="absolute top-3 right-3 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-bold uppercase text-primary shadow-sm">
                       {p.category}
                     </div>
                   </div>
@@ -116,11 +116,11 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
                       <div className="flex items-end justify-between mb-4">
                         <div>
                           <p className="text-[10px] text-slate-400 uppercase">Giá thuê (5 - 10 ngày)</p>
-                          <p className="text-lg font-bold text-red-600">{p.rentPrice.toLocaleString('vi-VN')}đ</p>
+                          <p className="text-lg font-bold text-primary">{p.rentPrice.toLocaleString('vi-VN')}đ</p>
                         </div>
                         <button 
                           onClick={() => { setSelectedProduct(p); setCurrentPage('detail'); }}
-                          className="bg-amber-400 hover:bg-amber-500 text-amber-950 px-4 py-2 rounded-lg text-sm font-bold shadow-sm transition-all"
+                          className="bg-primary hover:bg-primary text-secondary px-4 py-2 rounded-lg text-sm font-bold shadow-sm transition-all"
                         >
                           Chi Tiết
                         </button>
