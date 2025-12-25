@@ -70,7 +70,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
           onClick={() => setCurrentPage("home")}
           aria-label="Về trang chủ"
         >
-          <div className="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center text-white font-bold overflow-hidden">
+          <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold overflow-hidden">
             {/* Logo nằm trong /public/logo.jpg */}
             <img
               src="/logo.jpg"
@@ -111,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, setCurrentPage }) =
             type="button"
             onClick={handleCallClick}
             aria-label={`Gọi ngay ${PHONE_NUMBER}`}
-            className="bg-amber-400 hover:bg-amber-500 text-amber-950 font-bold px-4 py-2 rounded-lg flex items-center gap-2 transition-all shadow-sm active:scale-95 text-sm"
+            className="bg-primary hover:bg-primary text-secondary font-bold px-4 py-2 rounded-lg flex items-center gap-2 transition-all shadow-sm active:scale-95 text-sm"
           >
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path
@@ -155,22 +155,22 @@ export const Footer: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ set
             <li><button onClick={() => setCurrentPage('booking')} className="hover:text-primary transition-colors">Đặt lịch hẹn</button></li>
             <li><button onClick={() => setCurrentPage('contact')} className="hover:text-primary transition-colors">Liên hệ</button></li>
             <li>
-              <button onClick={() => setCurrentPage("home")} className="hover:text-amber-400 transition-colors">
+              <button onClick={() => setCurrentPage("home")} className="hover:text-primary transition-colors">
                 Giới Thiệu
               </button>
             </li>
             <li>
-              <button onClick={() => setCurrentPage("products")} className="hover:text-amber-400 transition-colors">
+              <button onClick={() => setCurrentPage("products")} className="hover:text-primary transition-colors">
                 Sản Phẩm
               </button>
             </li>
             <li>
-              <button onClick={() => setCurrentPage("booking")} className="hover:text-amber-400 transition-colors">
+              <button onClick={() => setCurrentPage("booking")} className="hover:text-primary transition-colors">
                 Đặt lịch hẹn
               </button>
             </li>
             <li>
-              <button onClick={() => setCurrentPage("contact")} className="hover:text-amber-400 transition-colors">
+              <button onClick={() => setCurrentPage("contact")} className="hover:text-primary transition-colors">
                 Liên hệ
               </button>
             </li>
@@ -219,14 +219,14 @@ export const Footer: React.FC<{ setCurrentPage: (page: Page) => void }> = ({ set
             <button className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-primary hover:text-secondary transition-all text-xl">
             <button
               type="button"
-              className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-amber-400 hover:text-amber-950 transition-all"
+              className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-primary hover:text-secondary transition-all"
               aria-label="Facebook"
             >
               f
             </button>
             <button
               type="button"
-              className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-amber-400 hover:text-amber-950 transition-all text-xl"
+              className="w-10 h-10 rounded-full bg-slate-700 flex items-center justify-center hover:bg-primary hover:text-secondary transition-all text-xl"
               aria-label="Chat"
             >
               💬
