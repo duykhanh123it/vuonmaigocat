@@ -21,7 +21,7 @@ const ProductList: React.FC<ProductListProps> = ({ setCurrentPage, setSelectedPr
   return (
     <div className="bg-slate-50 min-h-screen pb-20">
       {/* Banner */}
-      <section className="bg-gradient-to-b from-primary to-secondary text-white py-16">
+      <section className="bg-gradient-to-r from-secondary via-secondary to-primary text-white py-16">
         <div className="container mx-auto px-4 text-center">
            <h1 className="text-4xl md:text-5xl font-bold font-serif mb-4">Sản Phẩm Mai Tết</h1>
            <p className="text-lg opacity-90">Khám phá bộ sưu tập mai đa dạng, chất lượng cao</p>
